@@ -1,9 +1,13 @@
 %run the model multiple times, changing alpha/beta
+close all
+clear all
 
 num_viable_paths = zeros(2,5);
 num_drone1 = zeros(2,5);
 num_drone2 = zeros(2,5);
 num_drone3 = zeros(2,5);
+cost_by_storage = zeros(5,15);
+
 %gamma = alpha/beta
 cnt = 1;
 for gamma = [1e5:2e5:1e6]
@@ -31,6 +35,7 @@ for gamma = [1e5:2e5:1e6]
     num_drone2(1,cnt) = gamma;
     num_drone3(1,cnt) = gamma;
     
+    cost_by_storage(cnt,:) = cost_by_supply;
     
     cnt = cnt+1
 end

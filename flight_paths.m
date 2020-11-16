@@ -193,6 +193,7 @@ end
 
 % pulls minimum cost flight plans
 optimal_plan_idx = find(all_all_cost==min(all_all_cost,[], 'all'));
+cost_by_supply = sum(all_all_cost');
 
 disp(['Found ' num2str(length(optimal_plan_idx)) ' optimal flight plans'])
 

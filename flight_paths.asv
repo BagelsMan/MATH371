@@ -1,10 +1,10 @@
 % Optimizes flight paths
 
-clear all
+
 close all
 
 %% initialize hospitals
-hnum = 5;   %number of hospitals
+hnum = 3;   %number of hospitals
 %lon - x
 %lat - y
 
@@ -28,10 +28,10 @@ h5.x = 18.47;    %x coordinate
 h5.y = -66.73;  %y coordinate
 h5.req = 1;     %number of medipacks required
 
-all_h = [h1 h2 h3 h4 h5];
+all_h = [h1 h2 h3];
 
 %% initialize drones
-dronenum = 7;   %number of different drone choices
+dronenum = 4;   %number of different drone choices
 latperkm = 0.00898;
 
 drone1.packs = 1;    %number of packs drone is capable of holding at a time
@@ -62,7 +62,7 @@ drone7.packs = 2;    %number of packs drone is capable of holding at a time
 drone7.radius = 0.01;  %radius with which the drone can survey roads it passes
 drone7.maxv = 64*latperkm;   %max drone speed
 
-all_drone = [drone1 drone2 drone3 drone4 drone5 drone6 drone7];
+all_drone = [drone4 drone5 drone6 drone7];
 
 %% starting locations
 
@@ -74,8 +74,8 @@ storagelocations = readtable('storage_locations2.xlsx');
  starty = 0;
 
  %% Cost function parameters
- alpha = 1;
- beta = 0.00001;
+%  alpha = 1;
+%  beta = 0.00001;
  
 %% Plots hospital locations colored by medipack
 figure;
@@ -88,14 +88,14 @@ ylim([0 20])
 % each flight path is a vector of 2D lines, each represented as a pair of
 % points in 2D space
 % each 2D line is a path of a certain drone to a certain hospital
-drone_fleet = 5;    %number of drones in the fleet simulated
+drone_fleet = 2;    %number of drones in the fleet simulated
 
 %number of drone configurations
 n = dronenum;
 r = drone_fleet;
 config_num = nchoosek(n+r-1,r);
 %number of allowed trips
-trips_all = 13;
+trips_all = 7;
 %creates all flight paths
 % for drone_config = [1:config_num]
 %     for drone = [1:drone_fleet]
@@ -114,6 +114,7 @@ trips_all = 13;
 %create raw number flight paths
 all_flight_paths = [];
 all_flight_drones = [];
+disp(hnum^(trips_all))
 for paths = [1:hnum^(trips_all)]
     base_t_num = num2cell(dec2base(paths-1,hnum));
     flight_path = zeros(1,length(base_t_num));
@@ -141,6 +142,7 @@ for paths = [1:hnum^(trips_all)]
     all_flight_drones = [all_flight_drones; drones];
 
     all_flight_paths = [all_flight_paths; flight_path];
+    disp(paths)
 end
 
 %create more meaningful representations of the flight paths (with 2D lines)
@@ -155,6 +157,7 @@ end
 
 %sort the paths to get rid of ones that don't fill requirements
 sort_paths
+disp('paths sorted...')
 
 sz = size(sorted_paths);
 all_paths_lines = zeros(15,sz(1),sz(2),4);
@@ -170,9 +173,10 @@ for i = 1:15
             all_paths_lines(i,path_num,trip,:) = [startx,starty,all_h(path(trip)+1).x,all_h(path(trip)+1).y];
         end
     end
- end
+end
 
-
+disp('lines created...')
+ 
 %% optimizes all flight paths to minimize cost function
 all_all_cost = [];
 
@@ -189,6 +193,7 @@ end
 
 % pulls minimum cost flight plans
 optimal_plan_idx = find(all_all_cost==min(all_all_cost,[], 'all'));
+
 
 disp(['Found ' num2str(length(optimal_plan_idx)) ' optimal flight plans'])
 
