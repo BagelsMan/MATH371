@@ -1,0 +1,9 @@
+  Operating System: Linux 4.15.0-1091-oem #101-Ubuntu SMP Thu Jun 25 17:55:29 UTC 2020 x86_64
+  Processor ID:     x86 Family 6 Model 142 Stepping 12, GenuineIntel
+  Host Name:        Madisons-XPS-13-9380
+FATAL ERROR in native method: Nativewindow X11 IOError: Display 0x7fc8a54f33a0 (:0): Connection reset by peer
+FATAL ERROR in native method: Nativewindow X11 IOError: Display 0x7fc890977fb0 (:0): Resource temporarily unavailable
+	at sun.awt.X11.XlibWrapper.XEventsQueued(Native Method)
+	at sun.awt.X11.XToolkit.run(XToolkit.java:571)
+	at sun.awt.X11.XToolkit.run(XToolkit.java:538)
+	at java.lang.Thread.run(Thread.java:748)

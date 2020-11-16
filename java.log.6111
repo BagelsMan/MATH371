@@ -1,0 +1,10 @@
+  Operating System: Linux 4.15.0-1099-oem #109-Ubuntu SMP Wed Oct 7 14:11:31 UTC 2020 x86_64
+  Processor ID:     x86 Family 6 Model 142 Stepping 12, GenuineIntel
+  Host Name:        Madisons-XPS-13-9380
+FATAL ERROR in native method: Nativewindow X11 IOError: Display 0x7f7199518fc0 (:0): Conexión reinicializada por la máquina remota
+FATAL ERROR in native method: Nativewindow X11 IOError: Display 0x7f724c512b60 (:0): Recurso no disponible temporalmente
+FATAL ERROR in native method: Nativewindow X11 IOError: Display 0x7f7180716220 (:0): Recurso no disponible temporalmente
+	at sun.awt.X11.XlibWrapper.XEventsQueued(Native Method)
+	at sun.awt.X11.XToolkit.run(XToolkit.java:571)
+	at sun.awt.X11.XToolkit.run(XToolkit.java:538)
+	at java.lang.Thread.run(Thread.java:748)
