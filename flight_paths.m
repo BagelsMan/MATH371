@@ -31,7 +31,7 @@ h5.req = 1;     %number of medipacks required
 all_h = [h1 h2 h3];
 
 %% initialize drones
-dronenum = 3;   %number of different drone choices
+dronenum = 4;   %number of different drone choices
 latperkm = 0.00898;
 
 drone1.packs = 1;    %number of packs drone is capable of holding at a time
@@ -62,7 +62,7 @@ drone7.packs = 2;    %number of packs drone is capable of holding at a time
 drone7.radius = 0.01;  %radius with which the drone can survey roads it passes
 drone7.maxv = 64*latperkm;   %max drone speed
 
-all_drone = [drone1 drone2 drone3];
+all_drone = [drone4 drone5 drone6 drone7];
 
 %% starting locations
 
