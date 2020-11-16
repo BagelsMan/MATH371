@@ -1,4 +1,4 @@
-function cost = cost_fnc(flight_plan, drone_cf, path_lines, drones, dronenum)
+function cost = cost_fnc(flight_plan, drone_cf, path_lines, drones, dronenum, space_left, alpha, beta)
 %cost_fnc - the cost function for a given flight plan
 %CURRENTLY IGNORES ROADS SURVEYED
 %input:
@@ -29,7 +29,7 @@ norm_dist = dist./drone_sp';
 packs_delivered = sum(drone_cap);
 
 %calculates total cost
-cost = alpha*packs_delivered/(sum(norm_dist))-beta*left_over_space;
+cost = alpha*packs_delivered/(sum(norm_dist))-beta*space_left;
 
 
 

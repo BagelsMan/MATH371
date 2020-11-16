@@ -97,6 +97,7 @@ fulfilled = Reqcopy-Req; %how many packages were packed in by subtracting what's
 % disp(Req) %what's remaining (unfulfilled)
 % disp(fulfilled) %what's fulfilled
 % disp(c.l*c.w-totA) %how much square area is remaining
+remaining = c.l*c.w-totA;
 
 
 

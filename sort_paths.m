@@ -1,6 +1,7 @@
 % sort through and analyze flight paths
 sorted_paths = [];
 sorted_paths_drones = [];
+space_remaining = [];
 for path_num=[1:length(all_flight_paths(:,1))]
     path = all_flight_paths(path_num,:);
     drones = all_flight_drones(path_num,:,:);
@@ -41,5 +42,6 @@ for path_num=[1:length(all_flight_paths(:,1))]
     if flag==true
         sorted_paths=[sorted_paths; path];
         sorted_paths_drones=[sorted_paths_drones; drones];
+        space_remaining = [space_remaining remaining];
     end
 end
