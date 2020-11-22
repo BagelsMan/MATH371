@@ -41,4 +41,19 @@ cnt = 1;
 % end
 
 %run model with different drone fleet sizes
+diff_fleet_num = zeros(16,5);
+
+for fleet = [2:5]
+    drone_fleet = fleet;
+    flight_paths
+    
+    %store the cost function outputs for each run
+    cost_by_loc = sum(all_all_cost,2)/length(optimal_plan_idx);
+    
+    diff_fleet_num(1,cnt) = fleet;
+    diff_fleet_num(2:16,cnt) = cost_by_loc;
+    
+    
+    cnt=cnt+1;
+end
 

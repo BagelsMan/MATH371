@@ -74,8 +74,8 @@ storagelocations = readtable('storage_locations2.xlsx');
  starty = 0;
 
  %% Cost function parameters
-%  alpha = 1;
-%  beta = 0.00001;
+ alpha = 1;
+ beta = 0.00001;
  
 %% Plots hospital locations colored by medipack
 figure;
@@ -88,7 +88,7 @@ ylim([0 20])
 % each flight path is a vector of 2D lines, each represented as a pair of
 % points in 2D space
 % each 2D line is a path of a certain drone to a certain hospital
-drone_fleet = 2;    %number of drones in the fleet simulated
+% drone_fleet = 2;    %number of drones in the fleet simulated
 
 %number of drone configurations
 n = dronenum;
