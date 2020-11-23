@@ -29,7 +29,7 @@ norm_dist = dist./drone_sp';
 packs_delivered = sum(drone_cap);
 
 %calculates total cost
-cost = alpha*packs_delivered/(sum(norm_dist))-beta*space_left;
+cost = alpha*packs_delivered/(sum(norm_dist))-beta*space_left/(1e5);
 
 
 

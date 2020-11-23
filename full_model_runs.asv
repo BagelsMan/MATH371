@@ -79,10 +79,10 @@ cnt = 1;
 
 vary_gamma_costavg = zeros(2,11);
 vary_gamma_costrange = zeros(2,11);
-for gamma = [0.1:0.3:2.8]
+for gamma = [1:1:11]
+    mult = 0.000001;
     
-    alpha = gamma/(gamma+1);
-    beta = (1-alpha);
+    alpha = gamma*beta;
     
     flight_paths
     
