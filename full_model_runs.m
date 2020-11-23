@@ -59,19 +59,46 @@ cnt = 1;
 
 %run model with different drone fleet sizes, keeping the location config
 %the same
-diff_fleet_same_storage_avgcost = zeros(2,5);
-diff_fleet_same_storage_rangecost = zeros(2,5);
-for fleet = [2:5]
-    diff_fleet_same_storage_avgcost(1,cnt) = fleet;
-    diff_fleet_same_storage_rangecost(1,cnt) = fleet;
-    drone_fleet=fleet;
+% diff_fleet_same_storage_avgcost = zeros(2,5);
+% diff_fleet_same_storage_rangecost = zeros(2,5);
+% for fleet = [2:5]
+%     diff_fleet_same_storage_avgcost(1,cnt) = fleet;
+%     diff_fleet_same_storage_rangecost(1,cnt) = fleet;
+%     drone_fleet=fleet;
+%     flight_paths
+%     
+%     diff_fleet_same_storage_avgcost(2,cnt) = sum(all_cost)/length(all_cost);
+%     diff_fleet_same_storage_rangecost(2,cnt) = (max(all_cost)-min(all_cost));
+%     
+%     cnt = cnt+1
+%     
+% end
+
+%run model with one storage location, one fleet size and different
+%alpha/beta
+
+vary_gamma_costavg = zeros(2,10);
+vary_gamma_costrange = zeros(2,10);
+for gamma = [1e4:1e5:1e6]
+    beta = 0.000005;
+    alpha = gamma*beta;
+    
     flight_paths
     
-    diff_fleet_same_storage_avgcost(2,cnt) = sum(all_cost)/length(all_cost);
-    diff_fleet_same_storage_rangecost(2,cnt) = (max(all_cost)-min(all_cost));
+    vary_gamma_costavg(1,cnt) = gamma;
+    vary_gamma_costrange(1,cnt) = gamma;
     
-    cnt = cnt+1
+    cost_range = max(all_cost)-min(all_cost);
+    cost_avg = sum(all_cost)/length(all_cost);
+    
+    vary_gamma_costavg(2,cnt) = cost_avg;
+    vary_gamma_costrange(2,cnt) = cost_range;
+    
+    cnt = cnt+1;
     
 end
+    
+    
+    
     
 
