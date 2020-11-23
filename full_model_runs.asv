@@ -2,11 +2,11 @@
 close all
 clear all
 
-% num_viable_paths = zeros(2,5);
-% num_drone1 = zeros(2,5);
-% num_drone2 = zeros(2,5);
-% num_drone3 = zeros(2,5);
-% cost_by_storage = zeros(5,15);
+num_viable_paths = zeros(2,5);
+num_drone1 = zeros(2,5);
+num_drone2 = zeros(2,5);
+num_drone3 = zeros(2,5);
+cost_by_storage = zeros(5,15);
 
 %gamma = alpha/beta
 cnt = 1;
@@ -62,16 +62,12 @@ cnt = 1;
 diff_fleet_same_storage_avgcost = zeros(2,5);
 diff_fleet_same_storage_rangecost = zeros(2,5);
 for fleet = [2:5]
-    diff_fleet_same_storage_avgcost(1,cnt) = fleet;
+    diff_fleet_same_storage_sumcost(1,cnt) = fleet;
     diff_fleet_same_storage_rangecost(1,cnt) = fleet;
     drone_fleet=fleet;
     flight_paths
     
-    diff_fleet_same_storage_avgcost(2,cnt) = sum(all_cost)/length(all_cost);
-    diff_fleet_same_storage_rangecost(2,cnt) = (max(all_cost)-min(all_cost));
+    diff_fleet_same_storage_sumcost(
     
-    cnt = cnt+1
-    
-end
     
 
