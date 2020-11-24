@@ -94,7 +94,7 @@ drone_fleet = 2;    %number of drones in the fleet simulated
 n = dronenum;
 r = drone_fleet;
 config_num = nchoosek(n+r-1,r);
-configs = [1 1 1 1 2 2 2 3 3 4; 1 2 3 4 2 3 4 3 4 4];
+configs = [
 %number of allowed trips
 trips_all = 7;
 %creates all flight paths
