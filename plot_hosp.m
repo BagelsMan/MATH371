@@ -14,5 +14,7 @@ for h=[1:hnum]
         scatter(all_h(h).x,all_h(h).y,'MarkerFaceColor','b','MarkerEdgeColor',[1 1 1])
     elseif all_h(h).req==3
         scatter(all_h(h).x,all_h(h).y,'MarkerFaceColor','g','MarkerEdgeColor',[1 1 1])
+    elseif all_h(h).req==5
+        scatter(all_h(h).x,all_h(h).y,'MarkerFaceColor','m','MarkerEdgeColor',[1 1 1])
     end
 end

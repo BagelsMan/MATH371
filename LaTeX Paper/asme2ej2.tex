@@ -93,12 +93,23 @@ A packing algorithm is used to determine whether the materials necessitated by e
 \subsection{Cost Function}
 Our cost function is described by the following formula, evaluating for a via flight plan and drone configuration.
 \[
-C = \alpha P / \sum{D} - \beta S
+C = \alpha \frac{P}{\sum{t}} - \beta \frac{S}{100000}
 \]
-Where $P$ represents the total medpacks delivered, $D$ represents to normalized distance traveled, and $S$ represents the space left after packing all the drones (computed via the packing algorithm). 
-
+Where $P$ represents the total medpacks delivered, $\sum{t}$ is an estimate of the time for all the flights to occur, and $S$ represents the space left after packing all the drones (computed via the packing algorithm). Also, $C$ is our cost function output, the cost. The factor of $100000$ dividing $S$ is there to adjust the units of $S$ (it being on the order of $10^5$ while $\frac{P}{\sum{t}}$ is on the order of $10^0$) The time estimates are computed via the basic kinematic equation assuming constant speed, $\sum{t}=\sum{\frac{d}{v_d}}$ summed over all drone flights in the given plan. Here $d$ is distance traveled in a specified flight and $v_d$ is the max speed of the drone flying. This estimate of the time taken for a flight is assuming the drone is flying at max speed the whole way, and assuming equality of the time taken to fly to the hospital, and the time to fly back. The assumption of perfectly sequential ordering of the flights allows us to sum the times of individual flights to get the total time.
 
 \section{Results and Analysis}
-Our typical model output, expected to be used by the customer specifies several drone movements and a drone configuration. Each movement is a possible opportunity for a single drone to make one flight. A configuration specifies how many drones and of what types the drone are. In our simplified drone path algorithm, each movement is a straight line path from the starting location to the hospital specified, performed by a specified drone. Our final output is thus a single series of movements and a single configuration, corresponding to the most optimized plan, as determined by our cost function. 
+Our typical model output, expected to be used by the customer specifies several drone movements and a drone configuration. Each movement is a possible opportunity for a single drone to make one flight. A configuration specifies how many drones and of what types the drone are. In our simplified drone path algorithm, each movement is a straight line path from the starting location to the hospital specified, performed by a specified drone. Our final output is thus a single series of movements and a single configuration, corresponding to the most optimized plan, as determined by our cost function. In figure XXX, an example of an optimized model output is shown (need to include parameters it ran with in the figure description). \\
+Although it is not depicted in the figure, another piece of information was extracted from a given model run: the values found for the cost function. In the course of using our model, it may become necessary to select a sub-optimal flight plan due to limiting factors not taken into account with our model. Therefore we found it necessary to statistically analyze all the values of the cost function found on any viable flight path. This analysis was done for studies of parameter sensitivity as well as for directly comparing model outputs.
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../example_flight_plan}
+	\caption[Fig 1.]{Example optimized flight plan, ran with drone fleet size of 5, starting location 1, 5 allowed movements, and $\gamma$ = 2}
+	\label{Fig 1.}
+\end{figure}
+
+
+
 
 \end{document}

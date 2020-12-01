@@ -4,7 +4,7 @@
 close all
 
 %% initialize hospitals
-hnum = 3;   %number of hospitals
+hnum = 5;   %number of hospitals
 %lon - x
 %lat - y
 
@@ -28,7 +28,7 @@ h5.x = 18.47;    %x coordinate
 h5.y = -66.73;  %y coordinate
 h5.req = 1;     %number of medipacks required
 
-all_h = [h1 h2 h3];
+all_h = [h1 h2 h3 h4 h5];
 
 %% initialize drones
 dronenum = 4;   %number of different drone choices
@@ -75,7 +75,7 @@ storagelocations = readtable('storage_locations2.xlsx');
 
  %% Cost function parameters
 %  alpha = 1;
-%  beta = 0.00001;
+%  beta = 0.5;
  
 %% Plots hospital locations colored by medipack
 figure;

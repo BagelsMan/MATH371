@@ -1,6 +1,6 @@
 %plot single flight path indexed by the number plot_path_num and a drone
 %config specified by the numer dronecon
-path_plot = all_paths_lines(ex_row,plot_path_num,:,:);
+% path_plot = all_paths_lines(ex_row,plot_path_num,:,:);
 path_plot_mat = [path_plot(1,:,:,1); path_plot(1,:,:,2); path_plot(1,:,:,3); path_plot(1,:,:,4)];
 figure;
 hold on
@@ -13,6 +13,12 @@ for pth=[1:length(path_plot_mat(1,:))]
         line([line_vec(1) line_vec(3)],[line_vec(2) line_vec(4)],'Color','b')
     elseif all_flight_drones(plot_path_num,pth,dronecon)==2
         line([line_vec(1) line_vec(3)],[line_vec(2) line_vec(4)],'Color','g')
+    elseif all_flight_drones(plot_path_num,pth,dronecon)==3
+        line([line_vec(1) line_vec(3)],[line_vec(2) line_vec(4)],'Color','y')
+    elseif all_flight_drones(plot_path_num,pth,dronecon)==4
+        line([line_vec(1) line_vec(3)],[line_vec(2) line_vec(4)],'Color','k')
+    elseif all_flight_drones(plot_path_num,pth,dronecon)==5
+        line([line_vec(1) line_vec(3)],[line_vec(2) line_vec(4)],'Color','c')
     end
     
 end

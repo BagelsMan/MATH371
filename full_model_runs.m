@@ -81,6 +81,9 @@ vary_gamma_drone1 = zeros(2,15);
 vary_gamma_drone2 = zeros(2,15);
 vary_gamma_drone3 = zeros(2,15);
 vary_gamma_drone4 = zeros(2,15);
+cost_min_per_gamma = zeros(2,15);
+cost_avg_per_gamma = zeros(2,15);
+cost_sdev_per_gamma = zeros(2,15);
 for gamma = [0.1:0.3:2.8]
     
     alpha = gamma/(gamma+1);
@@ -92,6 +95,10 @@ for gamma = [0.1:0.3:2.8]
     vary_gamma_drone2(1,cnt) = gamma;
     vary_gamma_drone3(1,cnt) = gamma;
     vary_gamma_drone4(1,cnt) = gamma;
+    
+    cost_min_per_gamma(1,cnt) = gamma;
+    cost_avg_per_gamma(1,cnt) = gamma;
+    cost_sdev_per_gamma(1,cnt) = gamma;
     
     ind_path_drones1 = zeros(1,length(optimal_plan_idx));
     ind_path_drones2 = zeros(1,length(optimal_plan_idx));
@@ -134,6 +141,9 @@ for gamma = [0.1:0.3:2.8]
     vary_gamma_drone3(2,cnt) = sum(path_drone3)/length(optimal_plan_idx);
     vary_gamma_drone4(2,cnt) = sum(path_drone4)/length(optimal_plan_idx);
     
+    cost_min_per_gamma(2,cnt) = min(all_cost);
+    cost_avg_per_gamma(2,cnt) = sum(all_cost)/length(all_cost);
+    cost_sdev_per_gamma(2,cnt) = std(all_cost);
     
     cnt = cnt+1
     
