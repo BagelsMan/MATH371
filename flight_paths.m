@@ -67,7 +67,7 @@ all_drone = [drone4 drone5 drone6 drone7];
 %% starting locations
 
 % calls starting locations from spreadsheet
-% storagelocations = readtable('storage_locations2.xlsx');
+storagelocations = readtable('storage_locations2.xlsx');
 
 % sets starting locations (currently set in loop to test list of locations
  startx = 0;
@@ -96,7 +96,7 @@ r = drone_fleet;
 config_num = nchoosek(n+r-1,r);
 configs = [1 1 1 1 2 2 2 3 3 4; 1 2 3 4 2 3 4 3 4 4];
 %number of allowed trips
-trips_all = 7;
+% trips_all = 7;
 %creates all flight paths
 % for drone_config = [1:config_num]
 %     for drone = [1:drone_fleet]
@@ -164,7 +164,7 @@ all_paths_lines = zeros(1,sz(1),sz(2),4);
 
 % for i = 1:15
 % i=1;
-% location = 1;
+location = 1;
 startx = storagelocations{location,7};
 starty = storagelocations{location,8};
 
@@ -172,7 +172,7 @@ for path_num=[1:length(sorted_paths)]
     path = sorted_paths(path_num,:);
     path_num;
     for trip=[1:length(path)]
-        all_paths_lines(location,path_num,trip,:) = [startx,starty,all_h(path(trip)+1).x,all_h(path(trip)+1).y];
+        all_paths_lines(1,path_num,trip,:) = [startx,starty,all_h(path(trip)+1).x,all_h(path(trip)+1).y];
     end
 end
 % end
@@ -184,6 +184,7 @@ disp('lines created...')
 
 % for i = 1:15
 i=1;
+location = 1;
 all_cost = [];
     for path=[1:length(sorted_paths)]
         for config=[1:length(sorted_paths_drones(1,1,:))]

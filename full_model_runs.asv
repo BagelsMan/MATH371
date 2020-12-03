@@ -154,15 +154,13 @@ cnt = 1;
 %run model with different trips_all and store the
 %full cost function outputs
 
-cost_output_by_trips = {0, 0, 0, 0};
-for var = [7:10]
-    trips_all = var;
+cost_output_by_trips = [];
+for location = [1:15]
     flight_paths
     
     %pull all the cost function outputs
-    cost_output_by_trips{cnt} = all_cost;
+    cost_output_by_storage = [cost_output_by_storage; all_cost];
     
-    cnt = cnt+1
 end
     
     
