@@ -67,15 +67,15 @@ all_drone = [drone4 drone5 drone6 drone7];
 %% starting locations
 
 % calls starting locations from spreadsheet
-storagelocations = readtable('storage_locations2.xlsx');
+% storagelocations = readtable('storage_locations2.xlsx');
 
 % sets starting locations (currently set in loop to test list of locations
  startx = 0;
  starty = 0;
 
  %% Cost function parameters
-%  alpha = 1;
-%  beta = 0.5;
+ alph = 1;
+ beta = 0.5;
  
 %% Plots hospital locations colored by medipack
 figure;
@@ -160,20 +160,21 @@ sort_paths
 disp('paths sorted...')
 
 sz = size(sorted_paths);
-all_paths_lines = zeros(15,sz(1),sz(2),4);
+all_paths_lines = zeros(1,sz(1),sz(2),4);
 
 % for i = 1:15
-i=1;
-    startx = storagelocations{i,7};
-    starty = storagelocations{i,8};
-    
-    for path_num=[1:length(sorted_paths)]
-        path = sorted_paths(path_num,:);
-        path_num;
-        for trip=[1:length(path)]
-            all_paths_lines(i,path_num,trip,:) = [startx,starty,all_h(path(trip)+1).x,all_h(path(trip)+1).y];
-        end
+% i=1;
+% location = 1;
+startx = storagelocations{location,7};
+starty = storagelocations{location,8};
+
+for path_num=[1:length(sorted_paths)]
+    path = sorted_paths(path_num,:);
+    path_num;
+    for trip=[1:length(path)]
+        all_paths_lines(location,path_num,trip,:) = [startx,starty,all_h(path(trip)+1).x,all_h(path(trip)+1).y];
     end
+end
 % end
 
 disp('lines created...')
@@ -186,7 +187,7 @@ i=1;
 all_cost = [];
     for path=[1:length(sorted_paths)]
         for config=[1:length(sorted_paths_drones(1,1,:))]
-                all_cost= [all_cost cost_fnc(sorted_paths(path,:), sorted_paths_drones(path,:,config), all_paths_lines(i,path,:,:), all_drone, dronenum, space_remaining(path), alpha, beta)];
+                all_cost= [all_cost cost_fnc(sorted_paths(path,:), sorted_paths_drones(path,:,config), all_paths_lines(i,path,:,:), all_drone, dronenum, space_remaining(path), alph, beta)];
         end
     end
 %     all_all_cost(i,:) = all_cost;
