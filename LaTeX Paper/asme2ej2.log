@@ -1,28 +1,22 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.21)  3 DEC 2020 17:54
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  2 DEC 2020 21:58
->>>>>>> 599a25491a263d9e21aadbe49edc57a8cc8a76bc
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.21)  3 DEC 2020 18:34
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**asme2ej2.tex
-(./asme2ej2.tex
-LaTeX2e <2018-12-01>
-(./asme2ej.cls
+**./asme2ej2.tex
+(asme2ej2.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-09-03> (asme2ej.cls
 
 LaTeX Warning: You have requested document class `asme2ej',
                but the document class provides `asme2e'.
 
 Document Class: asme2e 2001/2/14 v2.0 Standard LaTeX document class
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/times.sty
-Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/mathptm.sty
-Package: mathptm 2005/04/12 PSNFSS-v9.2a Times w/ Math (SPQR, WaS) 
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\times.sty"
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) ("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\mathptm.s
+ty"
+Package: mathptm 2020/03/25 PSNFSS-v9.3 Times w/ Math (SPQR, WaS) 
 
 
 Package mathptm Warning: This package is to be regarded as obsolete.
@@ -60,163 +54,148 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 38.
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-Ten Point
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 301.
+) ("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifpdf.st
+y"
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1phv.fd
-File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+Ten Point
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 3
+01.
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1phv.fd"
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\tempbox=\box27
-\c@figure=\count86
-\c@table=\count87
-\@authcnt=\count88
-\@tmpcnt=\count89
-\bibindent=\dimen102
-\tempbox=\box28
-\minute=\count90
-\hour=\count91
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\tempbox=\box45
+\c@figure=\count174
+\c@table=\count175
+\@authcnt=\count176
+\@tmpcnt=\count177
+\bibindent=\dimen134
+\tempbox=\box46
+\minute=\count178
+\hour=\count179
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/epsfig.sty
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\epsfig.st
+y"
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
 )
-\epsfxsize=\dimen105
-\epsfysize=\dimen106
+\epsfxsize=\dimen137
+\epsfysize=\dimen138
 )
-(./asme2ej2.aux)
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
+d-pdftex.def"
+File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count180
+\l__pdf_internal_box=\box47
+) (asme2ej2.aux)
 \openout1 = `asme2ej2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 25.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+5.
+
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-\big@size=\dimen107
- (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+\big@size=\dimen139
+
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
+df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
-\scratchdimen=\dimen108
-\scratchbox=\box29
-\nofMPsegments=\count93
-\nofMParguments=\count94
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count95
-\MPscratchDim=\dimen109
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
-\everyMPtoPDFconversion=\toks16
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+\scratchcounter=\count181
+\scratchdimen=\dimen140
+\scratchbox=\box48
+\nofMPsegments=\count182
+\nofMParguments=\count183
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count184
+\MPscratchDim=\dimen141
+\MPnumerator=\count185
+\makeMPintoPDFobject=\count186
+\everyMPtoPDFconversion=\toks17
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-))))
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+85.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line
+ 27.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 27
-.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptmcm.fd
+"
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 27
-.
+LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line
+ 27.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omlptmcm.fd
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omlptmcm.fd
+"
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 27
-.
+LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
+ 27.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omspzccm.fd
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omspzccm.fd
+"
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 27
-.
+LaTeX Font Info:    Trying to load font information for OMX+psycm on input line
+ 27.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omxpsycm.fd
+("C:\Users\trevo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omxpsycm.fd
+"
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
@@ -233,21 +212,12 @@ Underfull \hbox (badness 10000) detected at line 27
 [1{C:/Users/trevo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-<<<<<<< HEAD
 ] [2]
 <../example_flight_plan.png, id=15, 581.92406pt x 446.41782pt>
-=======
- [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-<../example_flight_plan.png, id=10, 581.92406pt x 446.41782pt>
->>>>>>> 599a25491a263d9e21aadbe49edc57a8cc8a76bc
 File: ../example_flight_plan.png Graphic file (type png)
 <use ../example_flight_plan.png>
 Package pdftex.def Info: ../example_flight_plan.png  used on input line 117.
 (pdftex.def)             Requested size: 346.53343pt x 265.84328pt.
-<<<<<<< HEAD
 <../cost_output_per_storage.png, id=16, 785.93625pt x 536.0025pt>
 File: ../cost_output_per_storage.png Graphic file (type png)
 <use ../cost_output_per_storage.png>
@@ -278,17 +248,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--158
 Underfull \vbox (badness 1939) has occurred while \output is active []
 
  [4 <../example_flight_plan.png (PNG copy)> <../cost_output_per_storage.png (PN
-G copy)> <../cobt2d.png (PNG copy)>] [5
+G copy)> <../cobt2d.png (PNG copy)>] (asme2ej2.bbl) [5
 
 ] (asme2ej2.aux) ) 
 Here is how much of TeX's memory you used:
- 1577 strings out of 481165
- 23883 string characters out of 2902091
- 275114 words of memory out of 3000000
- 17179 multiletter control sequences out of 15000+200000
+ 1582 strings out of 481165
+ 23994 string characters out of 2902091
+ 274138 words of memory out of 3000000
+ 17181 multiletter control sequences out of 15000+200000
  562855 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,10n,37p,1497b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,10n,37p,1511b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/base/8r.enc}<C:/Users/trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmr10.pfb><C:/Users/trevo/AppData/Local/Programs/MiKTeX 2.9/
@@ -299,33 +269,9 @@ Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/trevo/AppData
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/trevo/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tr
 evo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on asme2ej2.pdf (5 pages, 228218 bytes).
+Output written on asme2ej2.pdf (5 pages, 229471 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
-=======
- [2] [3 <../example_flight_plan.png (PNG copy)>] (./asme2ej2.aux) ) 
-Here is how much of TeX's memory you used:
- 1762 strings out of 492616
- 25114 string characters out of 6129482
- 94628 words of memory out of 5000000
- 5645 multiletter control sequences out of 15000+600000
- 31407 words of font info for 64 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 41i,10n,25p,1039b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/
-texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf
--dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2019/texmf-dist/f
-onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
-pe1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on asme2ej2.pdf (3 pages, 109154 bytes).
-PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
->>>>>>> 599a25491a263d9e21aadbe49edc57a8cc8a76bc
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
