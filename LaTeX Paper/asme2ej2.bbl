@@ -1,8 +1,47 @@
 \begin{thebibliography}{}
 
+\bibitem[A.~Otto, 2018]{Otto}
+A.~Otto, N.~Agatz, J. C. B. G. E.~P. (2018).
+\newblock Optimization approaches for civil applications of unmanned aerial
+  vehicles (uavs) or aerial drones: A survey.
+\newblock {\em Network}, 72.
+
+\bibitem[Arenzana et~al., 2020]{Otero}
+Arenzana, A.~O., Macias, J. J.~E., and Angeloudis, P. (2020).
+\newblock Design of hospital delivery networks using unmanned aerial vehicles.
+\newblock {\em Transportation Research Record}, 2674(5):405--418.
+
 \bibitem[Arribas et~al., 2020]{Arribas}
 Arribas, E., Mancuso, V., and Cholvi, V. (2020).
 \newblock Coverage optimization with a dynamic network of drone relays.
 \newblock {\em IEEE Transactions on Mobile Computing}, 19:2278--2298.
+
+\bibitem[Baumgartner et~al., 2001]{Baumgartner}
+Baumgartner, A., Hinz, S., and Wiedemann, C. (2001).
+\newblock Efficient methods and interfaces for road tracking.
+\newblock {\em Int. Arch. Photogramm. Remote Sens.}, 34.
+
+\bibitem[{Escribano Macias} et~al., 2020]{EscribianoMacias}
+{Escribano Macias}, J., Angeloudis, P., and Ochieng, W. (2020).
+\newblock Optimal hub selection for rapid medical deliveries using unmanned
+  aerial vehicles.
+\newblock {\em Transportation Research Part C: Emerging Technologies}, 110:56
+  -- 80.
+
+\bibitem[Funabashi et~al., 2021]{Funabashi}
+Funabashi, Y., Shibata, A., Negoro, S., Taniguchi, I., and Tomiyama, H. (2021).
+\newblock {\em A Dynamic Programming Algorithm for Energy-Aware Routing of
+  Delivery Drones}, pages 1217--1226.
+
+\bibitem[Scott and Scott, 2017]{Scott}
+Scott, J. and Scott, C.~H. (2017).
+\newblock Drone delivery models for healthcare.
+\newblock In {\em HICSS}.
+
+\bibitem[W. et~al., 2011]{Lin}
+W., L., J., X., J., W., and X., W. (2011).
+\newblock A bricklaying heuristic algorithm for the orthogonal rectangular
+  packing problem.
+\newblock {\em Communications in Computer and Information Science}, 225.
 
 \end{thebibliography}

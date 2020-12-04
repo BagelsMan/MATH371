@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.21)  3 DEC 2020 19:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.21)  3 DEC 2020 21:04
 entering extended mode
 **./asme2ej2.tex
 (asme2ej2.tex
@@ -209,7 +209,10 @@ Underfull \hbox (badness 10000) detected at line 27
 []
  []
 
-[1{C:/Users/trevo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+Underfull \vbox (badness 3439) has occurred while \output is active []
+
+ [1{C:/Users/trevo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ] [2]
@@ -223,7 +226,8 @@ File: ../example_flight_plan.png Graphic file (type png)
 <use ../example_flight_plan.png>
 Package pdftex.def Info: ../example_flight_plan.png  used on input line 139.
 (pdftex.def)             Requested size: 346.53343pt x 265.84328pt.
-<../cost_output_per_storage.png, id=15, 785.93625pt x 536.0025pt>
+ [3 <./storage_fig.png>]
+<../cost_output_per_storage.png, id=24, 785.93625pt x 536.0025pt>
 File: ../cost_output_per_storage.png Graphic file (type png)
 <use ../cost_output_per_storage.png>
 Package pdftex.def Info: ../cost_output_per_storage.png  used on input line 157
@@ -234,41 +238,43 @@ Overfull \hbox (24.13968pt too wide) in paragraph at lines 157--158
  [][] 
  []
 
-[3 <./storage_fig.png>]
-<../cobt2d.png, id=25, 429.10312pt x 316.18124pt>
+[4 <../example_flight_plan.png (PNG copy)> <../cost_output_per_storage.png (PNG
+ copy)>]
+<../cobt2d.png, id=28, 429.10312pt x 316.18124pt>
 File: ../cobt2d.png Graphic file (type png)
 <use ../cobt2d.png>
 Package pdftex.def Info: ../cobt2d.png  used on input line 169.
 (pdftex.def)             Requested size: 217.24239pt x 160.0731pt.
 
-Underfull \vbox (badness 3590) has occurred while \output is active []
+Underfull \vbox (badness 2205) has occurred while \output is active []
 
- [4 <../example_flight_plan.png (PNG copy)> <../cost_output_per_storage.png (PN
-G copy)>]
-(asme2ej2.bbl) [5 <../cobt2d.png (PNG copy)>] (asme2ej2.aux) ) 
+
+(asme2ej2.bbl [5 <../cobt2d.png (PNG copy)>]) [6
+
+] (asme2ej2.aux) ) 
 Here is how much of TeX's memory you used:
- 1590 strings out of 481165
- 24125 string characters out of 2902091
- 268146 words of memory out of 3000000
- 17189 multiletter control sequences out of 15000+200000
+ 1597 strings out of 481165
+ 24192 string characters out of 2902091
+ 268319 words of memory out of 3000000
+ 17196 multiletter control sequences out of 15000+200000
  562855 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,10n,37p,1511b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/trevo/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/trevo/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/U
-sers/trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Users/trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/Users/trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/urw/helvetic/uhvb8a.pfb><C:/Users/trevo/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/trevo/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/trevo/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/trevo/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/trevo/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on asme2ej2.pdf (5 pages, 251795 bytes).
+ 44i,10n,37p,2330b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
+vips/base/8r.enc}<C:/Users/trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb><C:/Users/trevo/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/trevo/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/trevo/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/trevo/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/
+trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Use
+rs/trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:
+/Users/trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
+><C:/Users/trevo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on asme2ej2.pdf (6 pages, 259091 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
