@@ -1,0 +1,8 @@
+% Storage Location Algorithm
+	In order to produce a set of locations to test flight paths on, the storage location algorithm takes the hospital locations, each hospital's medical package demands, and desired number of storage locations as inputs. It then uses the Stirling numbers of the second kind for S(5,1), S(5,2), and S(5,3) to group all of the hospitals to allow for choice of one, two, or three storage locations. For each of these groups, the algorithm then finds a weighted mean location for each group with the weight determined by the total medical package demand of each hospital.  The exact computation of storage location for a given hospital grouping is as follows:
+	$ L_n = \sum_{i=1}^{m} p_i(x_i, y_i) / \sum_{i=1}^{m} p_i $
+	where L_n = Location number within grouping, with n being up to 3
+		i = hospitals in the group
+		p = package demand of hospital i
+		x, y = longitude, latitude of hospital i
+The output lists a discrete set of groupings of the hospitals with the corresponding locations of the storage containers for each hospital group.	
