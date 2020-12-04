@@ -119,10 +119,11 @@ The output lists a discrete set of groupings of the hospitals with the correspon
 % TODO: \usepackage{graphicx} required
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{storage_fig}
-	\caption[Fig 1]{A grouping of 5 hosptials to 2 locations, with the locations of the storage bins determined by the location of the hospitals and their medical package demands. L1 and L2 represent the storage locations and the blue dots represent the specific hospitals given by their 3-5 letter abbreviation.}
+	\includegraphics[width=0.7\linewidth]{../storage_fig2}
+	\caption[Fig 1]{A grouping of 5 hospitals to 2 locations, with the locations of the storage bins determined by the location of the hospitals and their medical package demands. L1 and L2 represent the storage locations and the blue dots represent the specific hospitals given by their 3-5 letter abbreviation.}
 	\label{Fig 1}
-\end{figure}
+	\end{figure}
+	
 
 
 \subsection{Cost Function}
@@ -182,7 +183,8 @@ Furthermore, our cost function did not take into account mapping of disaster ter
 
 Our assumption of perfectly flat 2D terrain without any need to alter the drone path due to obstructions causes us to lose the fundamental aspect of navigation in our drones. A real scenario in which the conditions that the drones must navigate through after a natural disaster are impossible to predict would warrant a stochastic method of modeling terrain obstructions and finding alternate routes. These methods would also be an effective measure of the DroneGo system's ability to operate successfully in any requested environment. How the implementation of a stochastic terrain model might alter the optimized outputs of the model would be an interesting investigation. 
 
-
+\section{Conclusion}
+Based on our model, we recommend that HELP, Inc. groups the hospitals so that the Caribbean Medical Center and Hospital HIMA are serviced by one storage bin located at longitude 18.2640 and latitude -65.878, with and Hospital Pavia Santurce, Puerto Rico Children's Hospital, and Hospital Pavia Arecibo serviced by two storage bins located at longitude 18.4187 and latitude-66.2087 (configuration 15). We also recommend limiting the number of drones used as this will increase space in the in the storage bins allocated to the medical packages, even though it decreases time efficiency of medical package delivery. With this in mind, we recommend selecting drones with a larger drone cargo bay type. According to this model, this will yield the best possible setup for storage and delivery of medical packages in the face of a disaster.
 
 
 \bibliographystyle{apalike}
