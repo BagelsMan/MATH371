@@ -119,7 +119,7 @@ The output lists a discrete set of groupings of the hospitals with the correspon
 % TODO: \usepackage{graphicx} required
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{../storage_fig2}
+	\includegraphics[width=1\linewidth]{../storage_fig2}
 	\caption[Fig 1]{A grouping of 5 hospitals to 2 locations, with the locations of the storage bins determined by the location of the hospitals and their medical package demands. L1 and L2 represent the storage locations and the blue dots represent the specific hospitals given by their 3-5 letter abbreviation.}
 	\label{Fig 1}
 	\end{figure}
@@ -143,7 +143,7 @@ Where $P$ represents the total medpacks delivered, $\sum{t}$ is an estimate of t
 \end{figure*}
 
 \subsection{Model output}
-Our model output for the customer specifies a drone configuration and a sequence of drone movements: each movement defines an action of a single drone making one flight, and a drone configuration defines how many and of what type the drones used in the system are. In our simplified drone path algorithm, each movement is a straight line path from the starting location to the hospital specified, performed by a specified drone. Our final output is thus a single series of movements and a single configuration, corresponding to the most optimized plan, as determined by our cost function. In figure 1, an example of an optimized model output is shown. 
+Our model output for the customer specifies a drone configuration and a sequence of drone movements: each movement defines an action of a single drone making one flight, and a drone configuration defines how many and of what type the drones used in the system are. In our simplified drone path algorithm, each movement is a straight line path from the starting location to the hospital specified, performed by a specified drone. Our final output is thus a single series of movements and a single configuration, corresponding to the most optimized plan, as determined by our cost function. In figure 2, an example of an optimized model output is shown. 
 
 Although it is not depicted in the figure, a model run will produce multiple viable flight plans, each with their own cost value, enabling the user to select a sub-optimal flight plan later on due to limiting factors not taken into account with our model. Therefore it is necessary to statistically analyze all the cost function outputs for a given model run near the minimum (representing the most optimal flight plan). This analysis was done for studies of parameter sensitivity as well as for directly comparing model outputs.
 
@@ -182,7 +182,6 @@ Our cost function is limited given that it favors solutions with fewer drones ev
 Furthermore, our cost function did not take into account mapping of disaster terrain. This can be reconciled by adjusting our model output after it has been optimized to the current cost function to add curvature that will increase its surveillance coverage of focus areas of land. A metric representing how far it may deviate from the initial straight line path can be applied to the adjusted output to reach a single solution. However, the main limitation of performing this adjustment after the main optimization is that adding this curvature will increase $\sum{t}$ as defined in the cost function and may increase $sum{t}$ unevenly across different viable flight paths. This could lead to a different optimized flight plan after the curvature would have been added. Thus, by adding the curvature after optimized by our cost function we lose the guarantee that our output is the most optimized under our cost function.
 
 Our assumption of perfectly flat 2D terrain without any need to alter the drone path due to obstructions causes us to lose the fundamental aspect of navigation in our drones. A real scenario in which the conditions that the drones must navigate through after a natural disaster are impossible to predict would warrant a stochastic method of modeling terrain obstructions and finding alternate routes. These methods would also be an effective measure of the DroneGo system's ability to operate successfully in any requested environment. How the implementation of a stochastic terrain model might alter the optimized outputs of the model would be an interesting investigation. 
-
 \section{Conclusion}
 Based on our model, we recommend that HELP, Inc. groups the hospitals so that the Caribbean Medical Center and Hospital HIMA are serviced by one storage bin located at longitude 18.2640 and latitude -65.878, with and Hospital Pavia Santurce, Puerto Rico Children's Hospital, and Hospital Pavia Arecibo serviced by two storage bins located at longitude 18.4187 and latitude-66.2087 (configuration 15). We also recommend limiting the number of drones used as this will increase space in the in the storage bins allocated to the medical packages, even though it decreases time efficiency of medical package delivery. With this in mind, we recommend selecting drones with a larger drone cargo bay type. According to this model, this will yield the best possible setup for storage and delivery of medical packages in the face of a disaster.
 
